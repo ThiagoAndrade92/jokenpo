@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jokenpo</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        h1 {
+            text-align: center;
+            padding: 5px;
+        }
+
+        .vencedor {
+            text-align: center;
+            font-size: 30px;
+        }
+
+        .selecao-jogador div,
+        .selecao-com div {
+            padding: 10px;
+            cursor: pointer;
+        }
+
+        img {
+            width: 200px;
+            opacity: .3;
+        }
+
+        @media screen and (max-width: 920px) {
+            img {
+                width: 300px;
+            }
+        }
+
+        @media screen and (max-width: 500px) {
+            img {
+                width: 170px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Jokenpo</h1>
+    <h2 class="vencedor">Resultado</h2>
+    <hr>
+    <div class="container">
+        <div class="selecao-jogador">
+            <div><img opt="pedra" src="imagens/pedra.png"></div>
+            <div><img opt="papel" src="imagens/papel.png"></div>
+            <div><img opt="tesoura" src="imagens/tesoura.png"></div>
+        </div>
+        <div class="selecao-com">
+            <div><img opt="pedra" src="imagens/pedra.png"></div>
+            <div><img opt="papel" src="imagens/papel.png"></div>
+            <div><img opt="tesoura" src="imagens/tesoura.png"></div>
+        </div>
+    </div>
+
+    <script src="js/jokenpo.js"></script>
+</body>
+</html>
